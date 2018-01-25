@@ -3,20 +3,20 @@
 def compress_string(string):
     mylist=list(string)
     i=0
+    final_str=''
+    current=mylist[0]
 
-    final_str=""
-
+    count=0
     while (i<len(string)-1):
-        count=1
-        if mylist[i]==mylist[i+1]:
-            i=i+1 
+        if mylist[i]!=current:
+            final_str=final_str+str(current)+str(count) 
+            current=mylist[i]
+            count=0
+            i=i+1
+        else:
             count=count+1
-
-        final_str=final_str+str(mylist[i]+str(count))
-
-        i=i+1 
+            i=i+1
 
     return final_str 
 
-print(compress_string('abcde'))
-print(compress_string('aabbcccdeee'))
+print(compress_string('aaaaabbcccdeee'))
