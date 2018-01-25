@@ -1,4 +1,6 @@
 # A program to test whether two strings are one or zero edits away 
+# In this program, order doesn't matter and you can either add or delete a character from the string. 
+
 
 def check_string (str1, str2):
 
@@ -38,3 +40,5 @@ print(check_string('abc','ab')) #YES
 print(check_string('abcd','abc')) #YES 
 
 print(check_string('dcba','abc')) #NO
+
+print(check_string('pale','bale')) #YES 
