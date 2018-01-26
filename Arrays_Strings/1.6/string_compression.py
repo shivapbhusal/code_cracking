@@ -28,3 +28,4 @@ def return_compression (string):
 print(return_compression('aaaaabbcccdeee'))
 print(return_compression('abc'))
 print(return_compression('aaibc'))
+print(return_compression('aaaaaaaaaaaaaaaaaaabcdd'))
