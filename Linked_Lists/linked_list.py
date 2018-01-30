@@ -32,19 +32,18 @@ class LinkedList():
             size = size + 1
         return size
 
+    def delete(self, value):
+        current=self.head
+        prev=current
+        while (current.data !=None):
+            if current.get_data==value:
+                prev
+
+        prev=current 
+        current=current.get_next()
+
     def read(self):
         current = self.head
         while (current != None):
             print(current.get_data())
             current = current.get_next()
-
-
-L = LinkedList()
-
-for i in range(10):
-    L.insert(i)
-
-x=L.head.get_data()
-
-print(L.size())
-print(L.read())
