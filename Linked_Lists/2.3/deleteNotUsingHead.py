@@ -5,7 +5,7 @@ sys.path.insert(0,'/home/civaist/Documents/Others/code_cracking/Linked_Lists')
 from linked_list import LinkedList
 from linked_list import Node 
 	
-def deleteMiddle(L,myNode):
+def partition(6):
     myNode.data=myNode.get_next().data
     myNode.next_node=myNode.get_next().get_next()
 

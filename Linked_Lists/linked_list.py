@@ -35,12 +35,12 @@ class LinkedList():
     def delete(self, value):
         current=self.head
         prev=current
-        while (current.data !=None):
-            if current.get_data==value:
-                prev
-
-        prev=current 
-        current=current.get_next()
+        while (current!=None):
+            if current.get_data()==value:
+                prev.set_next(current.get_next())
+                return None 
+            prev=current 
+            current=current.get_next() 
 
     def read(self):
         current = self.head
