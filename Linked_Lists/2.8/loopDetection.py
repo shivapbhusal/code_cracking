@@ -33,7 +33,13 @@ else:
     print('YES')
 
 
+slow=L.head
 
+while (slow !=fast):
+    slow=slow.get_next()
+    fast=fast.get_next()
+
+print(fast.get_data())
 
 
 
