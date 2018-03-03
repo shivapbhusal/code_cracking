@@ -18,7 +18,20 @@ while (current.get_data()!=1):
     if current.get_data()==1:
         current.set_next(L.head)
 
-L.read()
+slow=L.head
+fast=L.head 
+
+while (fast !=None or fast.next !=None):
+    slow=slow.get_next()
+    fast=fast.get_next().get_next()
+    if (slow==fast):
+        break
+
+if fast==None and fast.next==None:
+    print('NO')
+else:
+    print('YES')
+
 
 
 
